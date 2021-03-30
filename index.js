@@ -6,7 +6,7 @@ const MongoClient = require('mongodb').MongoClient;
 require('dotenv').config()
 // console.log(process.env.DB_USER)
 
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.73puo.mongodb.net/burjAlArab?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.73puo.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 const port = 5000;
 
 var serviceAccount = require("./configs/burj-al-arab-7afbd-firebase-adminsdk-9ngt0-3cc452556a.json");
